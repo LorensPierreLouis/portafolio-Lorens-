@@ -4,6 +4,12 @@
     --color-de-fondo: #F5F5F5;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
+    --azul-oscuro: #154580;
+    --azul-medio: #3970BE;
+    --azul-claro: #E5F1FF;
+    --gris-texto: #444444;
+    --gris-claro: #ECECEC;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,17 +30,10 @@ a {
     color: var(--color-de-link);
 }
 
-/* ------------------------------ Sección Menú -------------------------------*/
-.cabecera {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--color-de-fondo-menu);
-}
 
-.cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+section{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .cabecera__titulo {
@@ -42,62 +41,32 @@ a {
     text-align: center;
 }
 
-.navegacion__lista {
-    display: none;
+.redes__img{
+    background-color: var(--azul-medio);
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.redes__img:hover{
+background-color: var(--azul-oscuro);
 }
 
-.navegacion__elemento a {
-    font-size: 0.9rem;
+.presentacion__foto{
+    height: 150px;
+    width: 180px;
+    border-radius: 50px;
 }
-/* ------------------------------ Sección Presentación ------------------------------*/
-
-
-/* ------------------------------ Sección sobre mí ----------------------------------*/
-
-
-/*------------------------------ Sección de Habilidades ------------------------------*/
-
-
-/*------------------------------ Sección de Aficiones --------------------------------*/
-
-
-/*------------------------------ Sección de Proyectos --------------------------------*/
-
-
-/*------------------------------ Sección de Contacto ---------------------------------*/
-
-
-/* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
-    .cabecera {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cabecera__logo {
-        max-width: 100px;
-    }
-
-    .cabecera__titulo {
-        font-size: 1.5rem;
-    }
-
-    .navegacion__lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
-    }
-
-    .navegacion__elemento a {
-        font-size: 1rem;
+    .presentacion__foto{
+        height: 180px;
+        width: 180px;
+        border-radius: 50px;
     }
 }
 
-/* Pantallas grandes */
 @media (min-width: 1024px) {
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera__titulo {
@@ -107,4 +76,11 @@ a {
     .navegacion__elemento a {
         font-size: 1.1rem;
     }
+
+    .presentacion__foto{
+        height: 300px;
+        width: 300px;
+        border-radius: 50px;
+    }
+   
 }

@@ -1,0 +1,106 @@
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 300px;
+    width: 100%;
+    background-color: var(--color-de-fondo-menu);
+    
+
+}
+.cabecera_logo_titulo{
+    display: flex;
+    gap: 20px;
+}
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.navegacion__lista{
+    display: flex;
+    flex-direction: row;
+   
+}
+.navegacion__elemento:nth-child(1),
+.navegacion__elemento:nth-child(2),
+.navegacion__elemento:nth-child(3),
+.navegacion__elemento:nth-child(4),
+.navegacion__elemento:nth-child(5){
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    padding-top: 10px;
+    
+}
+
+
+.redes{
+display: flex;
+gap: 45px;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+    }
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        gap:10px;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+        white-space:nowrap ;
+    }
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5){
+        display: flex;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .presentacion__contenedor{
+     padding-top: 100px;
+        
+        background-color: aqua;
+    }
+}
