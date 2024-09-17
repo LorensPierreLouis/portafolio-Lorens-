@@ -1,14 +1,17 @@
 /* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
 */
 :root {
-    --color-de-fondo: #F5F5F5;
-    --color-de-fondo-menu: #ffffff;
+    --color-de-fondo:#fbf2ed;
+    --color-de-fondo-menu: #9a1a1a ;
     --color-de-link: #000000;
     --azul-oscuro: #154580;
     --azul-medio: #3970BE;
     --azul-claro: #E5F1FF;
     --gris-texto: #444444;
-    --gris-claro: #ECECEC;
+    --gris-claro: #c3c3cf;
+    --lavanda:#E6E6FA;
+    --blanco:#ffffff;
+    --azul-cielo-claro:#87CEFA;
     box-sizing: border-box;
 }
 
@@ -21,8 +24,28 @@ body {
     line-height: 1.6;
 }
 
-ol, ul, li {
-    list-style: none;
+header{
+    width: 100%;
+    
+}
+.cabecera{
+   
+    padding-left: 20px;
+    padding-right: 0;
+    color:#edeae7;
+
+}
+.navegacion__elemento1{
+    color:#edeae7;
+}
+
+
+.navegacion__elemento:hover{
+background-color:var( --azul-medio) ;
+width: 100%;
+padding-right: 10px;
+padding-left: 10px;
+border-radius: 15px;
 }
 
 a {
@@ -32,9 +55,32 @@ a {
 
 
 section{
+   
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/*Sección de Presentación*/
+.presentacion__titulo,
+.presentacion__subtitulo,
+.sobre-mi__texto{
+    text-align: justify;
+}
+.sobre-mi,
+.formacion{
+    background-color:var(--gris-claro);
+}
+.sobre-mi__titulo,
+.habilidades__titulo,
+.aficiones__titulo,
+.formacion__titulo,
+.proyectos__titulo,
+.contacto__titulo{
+font-weight:600 ;
+font-size: 1.05rem;
+
+}
+
 
 .cabecera__titulo {
     font-size: 1.2rem;
@@ -42,15 +88,33 @@ section{
 }
 
 .redes__img{
-    background-color: var(--azul-medio);
+    background-color: var(--azul-cielo-claro);
     width: 100px;
     text-align: center;
     border-radius: 10px;
     
 }
 .redes__img:hover{
-background-color: var(--azul-oscuro);
+    background-color: var(--azul-oscuro);
+    }
+.redes_texto:hover{
+    color: var(--blanco);
 }
+/*Contacto*/
+.contacto{   
+ background-color:var(--gris-claro);
+ height: auto;
+}
+.contacto__boton{
+    background-color:var(--blanco);
+    width: 20%;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.contacto__boton:hover{
+    background-color:var(--azul-cielo-claro);
+}
+      
 
 .presentacion__foto{
     height: 150px;

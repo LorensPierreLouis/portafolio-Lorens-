@@ -18,21 +18,23 @@
 
 <body>
     <!-- Menú -->
-    <header class="cabecera">
-        <div class="cabecera_logo_titulo">
-            <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
-            <h1 class="cabecera__titulo">Alura Latam</h1>
+    <header>
+        <div class="cabecera">
+            <div class="cabecera_logo_titulo">
+                <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+                <h1 class="cabecera__titulo">Lorens</h1>
+            </div>
+            <nav class="navegacion">
+                <ul class="navegacion__lista">
+                    <li class="navegacion__elemento"><a href="#sobre-mi" class="navegacion__elemento1" >Sobre mí</a></li>
+                    <li class="navegacion__elemento"><a href="#habilidades" class="navegacion__elemento1" >Habilidades</a></li>
+                    <li class="navegacion__elemento"><a href="#aficiones" class="navegacion__elemento1" >Aficiones</a></li>
+                    <li class="navegacion__elemento"><a href="#formacion" class="navegacion__elemento1" >Formación</a></li>
+                    <li class="navegacion__elemento"><a href="#proyectos" class="navegacion__elemento1" >Proyectos</a></li>
+                    <li class="navegacion__elemento"><a href="#contacto" class="navegacion__elemento1" >Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navegacion">
-            <ul class="navegacion__lista">
-                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
-                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
-                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
-                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <!--contenedor principal-->
     <main>
@@ -44,10 +46,10 @@
                 <h1 class="presentacion__titulo">Hola, mi nombre es Lorens Pierre-Louis y construyo páginas web</h1> <br>
                 <p class="presentacion__subtitulo">Soy formada en... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p> <br>
                 <ul class="redes">
-                    <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-                    <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-                    <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-                    <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="" class="redes_texto">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="" class="redes_texto">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="" class="redes_texto">Facebook <img src="assets/arrow.png" alt="Flecha"></a></li>
+                    <li class="redes__img"><a href="" class="redes_texto">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
                 </ul>
             </div>
         </section>
@@ -64,28 +66,17 @@
         <!-- Sección de Habilidades -->
         <section class="habilidades" id="habilidades">
             <h2 class="habilidades__titulo">Habilidades</h2>
-            <ul class="habilidades__lista">
-                <li class="habilidades__elemento">
-                    <img class="habilidades__icono" src="assets/html.png" alt="HTML">
+            <ul class="habilidades__elemento">
+                <li class="habilidades__elemento-iconoParrafo">
+                    <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
                     <p class="habilidades__nombre">HTML 5</p>
                 </li>
-                <li class="habilidades__elemento">
+                <li class="habilidades__elemento-iconoParrafo">
                     <img class="habilidades__icono" src="assets/js_icon.png" alt="JavaScript">
                     <p class="habilidades__nombre">JavaScript</p>
                 </li>
-                <li class="habilidades__elemento">
-                    <img class="habilidades__icono" src="assets/php_icon.png" alt="PHP">
-                    <p class="habilidades__nombre">PHP</p>
                 </li>
-                <li class="habilidades__elemento">
-                    <img class="habilidades__icono" src="assets/nodejs_icon.png" alt="Node.js">
-                    <p class="habilidades__nombre">Node.js</p>
-                </li>
-                <li class="habilidades__elemento">
-                    <img class="habilidades__icono" src="assets/react_icon.png" alt="React">
-                    <p class="habilidades__nombre">React</p>
-                </li>
-                <li class="habilidades__elemento">
+                <li class="habilidades__elemento-iconoParrafo">
                     <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
                     <p class="habilidades__nombre">CSS</p>
                 </li>
@@ -96,13 +87,10 @@
         <section class="aficiones" id="aficiones">
             <h2 class="aficiones__titulo">Aficiones</h2>
             <ul class="aficiones__lista">
-                <li class="aficiones__elemento">
-                    <img class="aficiones__icono" src="assets/skate_icon.png" alt="Patinaje">
-                    <p class="aficiones__nombre">Patinaje</p>
-                </li>
+              
                 <li class="aficiones__elemento">
                     <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
-                    <p class="aficiones__nombre">Tocar bajo</p>
+                    <p class="aficiones__nombre">Tocar guitarra</p>
                 </li>
                 <li class="aficiones__elemento">
                     <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
@@ -110,7 +98,7 @@
                 </li>
                 <li class="aficiones__elemento">
                     <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
-                    <p class="aficiones__nombre">Ver series</p>
+                    <p class="aficiones__nombre">Ver documentales</p>
                 </li>
                 <li class="aficiones__elemento">
                     <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
@@ -118,7 +106,7 @@
                 </li>
                 <li class="aficiones__elemento">
                     <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
-                    <p class="aficiones__nombre">Tomar fotos</p>
+                    <p class="aficiones__nombre">Fotografiar</p>
                 </li>
             </ul>
         </section>

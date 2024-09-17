@@ -4,60 +4,188 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
     padding: 1rem;
-    gap: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 50px;
     width: 100%;
+    height: 30px;
     background-color: var(--color-de-fondo-menu);
-    
-
 }
 .cabecera_logo_titulo{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 .cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
-}
+    max-width: 30px;
+    height: 30px;
+}   
+/* Ajuste para pantallas pequeñas */
+
 
 .navegacion__lista{
     display: flex;
-    flex-direction: row;
-   
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+    width: 200px;
+
 }
-.navegacion__elemento:nth-child(1),
-.navegacion__elemento:nth-child(2),
-.navegacion__elemento:nth-child(3),
-.navegacion__elemento:nth-child(4),
-.navegacion__elemento:nth-child(5){
-    display: none;
-}
+
 
 .navegacion__elemento a {
     font-size: 0.9rem;
 }
 
 main{
+
     display: flex;
     flex-direction: column;
     gap: 50px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 120px;
     
 }
 
 
 .redes{
 display: flex;
-gap: 45px;
+gap: 15px;
+width: 250px;
+flex-flow: row wrap;
 }
-/* ------------------------------ Sección Presentación ------------------------------*/
+
+/* habilidades*/
+.habilidades,
+.aficiones,
+.formacion,
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+.habilidades__elemento,
+.aficiones__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+  
+
+}
+
+
+.habilidades__elemento-iconoParrafo{
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.habilidades__titulo{
+    text-align: center;
+}
+
+.habilidades__icono{
+    width: 30px;
+    height: 30px;
+}
+
+/*aficiones*/
+
+.aficiones__lista
+{
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.aficiones__titulo{
+    text-align: center;
+}
+
+
+.aficiones__elemento{
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+    text-align: start;
+    
+    max-width: 90px;
+   
+}
+
+/*formacion*/
+.formacion{
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+}
+.formacion__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formacion__elemento{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+
+.formacion__icono{
+    background-color: #ffffff;
+    padding: 50px;
+    align-items: center;
+    
+}
+
+
+/*Contacto*/
+   
+    .contacto__titulo
+    .contacto__formulario{
+        display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+    .contacto__campo{
+        width:100%;
+    
+    }  
+
+    .contacto__campo--textarea{
+        height: 70px;
+    }
+   
+     
+
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
+    /*Cabecera*/
     .cabecera {
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+       
+    }
+
+    .navegacion__lista{
+        display: none;
+       overflow: hidden;
+       ;
+        gap: 15px;
         width: 100%;
+
+    
     }
     .main{
         width: 100%;
@@ -83,18 +211,51 @@ gap: 45px;
         margin-top: 0;
         white-space:nowrap ;
     }
-    .navegacion__elemento:nth-child(1),
-    .navegacion__elemento:nth-child(2),
-    .navegacion__elemento:nth-child(3),
-    .navegacion__elemento:nth-child(4),
-    .navegacion__elemento:nth-child(5){
-        display: flex;
-    }
-
+    
     .navegacion__elemento a {
         font-size: 1rem;
     }
+    .habilidades__elemento{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .habilidades__elemento-iconoParrafo{
+        background-color: #ffffff;
+        text-align: center;
+        padding: 90px;
+       
+
+    }
+
+   /*redes*/
+    .redes{
+        display: flex;
+        flex-flow: none;
+        flex-direction: row;
+        width: 100%;
+    }
+        
+
+    /*formacion*/
+    .formacion__lista{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
+.formacion__icono{
+   
+    padding: 20px;
+   
+    
 }
+
+    
+}
+
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
@@ -103,4 +264,5 @@ gap: 45px;
         
         background-color: aqua;
     }
+   
 }
