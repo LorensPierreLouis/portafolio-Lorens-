@@ -43,8 +43,8 @@
         <section class="presentacion">
             <img class="presentacion__foto" src="assets/WhatsApp Image 2024-08-30 at 19.12.21.jpeg" alt="Foto de perfil">
             <div class="presentacion__contenedor">
-                <h1 class="presentacion__titulo">Hola, mi nombre es Lorens Pierre-Louis y construyo páginas web</h1> <br>
-                <p class="presentacion__subtitulo">Soy formada en... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p> <br>
+                <h1 class="presentacion__titulo">Hola, mi nombre es Lorens Pierre-Louis, hago páginas web.</h1> <br>
+                <p class="presentacion__subtitulo">Actualmente estoy estudiando en Oracle ONE de Alura Latam para perfeccionándome.</p> <br>
                 <ul class="redes">
                     <li class="redes__img"><a href="" class="redes_texto">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
                     <li class="redes__img"><a href="" class="redes_texto">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
@@ -56,16 +56,15 @@
 
         <!-- Sección sobre mí -->
         <section class="sobre-mi" id="sobre-mi">
-            <h2 class="sobre-mi__titulo">Sobre mí</h2>
-            <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-            <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-            <!-- Firma opcional -->
-            <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
+            <h1 class="sobre-mi__titulo">Sobre mí</h1>
+            <p class="sobre-mi__texto">Soy de nacionalidad haitiana, vivo en chile hace ocho años. Soy un egresado de licenciatura de nutrición y dietética de la universidad tecnológica (INACAP)hace tres años. Hoy estoy aprendiendo programación web (FRONT-END). Soy un apacionado de la tecnología, y quiero contribuir resolviendo problemas a través de ésta.</p>
+        
+        
         </section>
 
         <!-- Sección de Habilidades -->
-        <section class="habilidades" id="habilidades">
-            <h2 class="habilidades__titulo">Habilidades</h2>
+        <section class="habilidades" id="habilidades"></section>
+            <h1 class="habilidades__titulo">Habilidades</h1>
             <ul class="habilidades__elemento">
                 <li class="habilidades__elemento-iconoParrafo">
                     <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
@@ -84,79 +83,116 @@
         </section>
 
         <!-- Sección de Aficiones -->
-        <section class="aficiones" id="aficiones">
-            <h2 class="aficiones__titulo">Aficiones</h2>
-            <ul class="aficiones__lista">
-              
-                <li class="aficiones__elemento">
-                    <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
+        <section class="aficiones" id="aficiones" aria-labelledby="aficiones-titulo">
+            <h2 id="aficiones-titulo" class="aficiones__titulo">Aficiones</h2>
+            <ul class="aficiones__lista" role="list">
+                <li class="aficiones__elemento" role="listitem">
+                    <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Icono de tocar guitarra" aria-hidden="true">
                     <p class="aficiones__nombre">Tocar guitarra</p>
                 </li>
-                <li class="aficiones__elemento">
-                    <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
+                <li class="aficiones__elemento" role="listitem">
+                    <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Icono de oír música" aria-hidden="true">
                     <p class="aficiones__nombre">Oír música</p>
                 </li>
-                <li class="aficiones__elemento">
-                    <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
+                <li class="aficiones__elemento" role="listitem">
+                    <img class="aficiones__icono" src="assets/tv_icon.png" alt="Icono de ver documentales" aria-hidden="true">
                     <p class="aficiones__nombre">Ver documentales</p>
                 </li>
-                <li class="aficiones__elemento">
-                    <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
+                <li class="aficiones__elemento" role="listitem">
+                    <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Icono de cocinar" aria-hidden="true">
                     <p class="aficiones__nombre">Cocinar</p>
                 </li>
-                <li class="aficiones__elemento">
-                    <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
+                <li class="aficiones__elemento" role="listitem">
+                    <img class="aficiones__icono" src="assets/camera_icon.png" alt="Icono de fotografiar" aria-hidden="true">
                     <p class="aficiones__nombre">Fotografiar</p>
                 </li>
             </ul>
         </section>
 
+
         <!-- Sección de Formación académica -->
-        <section class="formacion" id="formacion">
-            <h2 class="formacion__titulo">Formación académica</h2>
+        <section class="formacion" id="formacion" aria-labelledby="formacion-titulo">
+            <h1 id="formacion-titulo" class="formacion__titulo">Formación académica</h1>
             <ul class="formacion__lista">
                 <li class="formacion__elemento">
-                    <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR">
+                    <img class="formacion__icono" src="assets/logo_inacap.png" alt="Logo de INACAP" role="img" />
                     <div>
-                        <h3 class="formacion__nombre">Análisis de datos</h3>
-                        <p class="formacion__detalle">2018 - UFPR</p>
+                        <h2 class="formacion__nombre">Licenciado en nutrición y dietética</h2>
+                        <p class="formacion__detalle">2017-2021</p>
                     </div>
                 </li>
+                
                 <li class="formacion__elemento">
-                    <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
+                    <img class="formacion__icono" src="assets/logo_usach.png" alt="Logo de USACH" role="img" />
                     <div>
-                        <h3 class="formacion__nombre">Formación en UX Design</h3>
-                        <p class="formacion__detalle">2019 - Alura</p>
+                        <h2 class="formacion__nombre">Posgrado en tecnología de los alimentos</h2>
+                        <p class="formacion__detalle">2021 - No terminado</p>
                     </div>
                 </li>
+        
                 <li class="formacion__elemento">
-                    <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ">
+                    <img class="formacion__icono" src="assets/alura_logo.png" alt="Logo de Alura" role="img" />
                     <div>
-                        <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                        <p class="formacion__detalle">En curso - UFRJ</p>
+                        <h2 class="formacion__nombre">Programación Front-End</h2>
+                        <p class="formacion__detalle">En curso - Alura</p>
                     </div>
                 </li>
             </ul>
         </section>
+        
 
         <!-- Sección de Proyectos -->
         <section class="proyectos" id="proyectos">
-            <h2 class="proyectos__titulo">Experiencia Profesional</h2>
-            <div class="proyectos__contenedor">
-                <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-                <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-            </div>
-            <div class="proyectos__contenedor">
-                <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-                <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-            </div>
+            <h1 class="proyectos__titulo">Experiencia Profesional</h1>
+            <ul class="proyectos__contenedor" role="list">
+                <li class="proyectos__contenedor-elementos">
+                    <figure>
+                        <img class="proyectos_img" src="ruta/a/tu/imagen1.jpg" alt="Captura de pantalla del encriptador de texto">
+                        <figcaption>Encriptador de texto</figcaption>
+                    </figure>
+                    <p class="proyectos__nombre">Challenge Oracle</p>
+                    <nav class="proyectos_nav">
+                        <ul>
+                            <li><a class="proyectos_nav-uno" href="url-del-repositorio-1" aria-label="Ver repositorio del encriptador de texto">Repositorio</a></li>
+                            <li><a class="proyectos_nav-dos" href="url-del-demo-1" aria-label="Ver demo del encriptador de texto">Ver el demo</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="proyectos__contenedor-elementos">
+                    <figure>
+                        <img class="proyectos_img" src="ruta/a/tu/imagen2.jpg" alt="Captura de pantalla del sitio web">
+                        <figcaption>Sitio web</figcaption>
+                    </figure>
+                    <p class="proyectos__nombre">Práctica personal</p>
+                    <nav class="proyectos_nav">
+                        <ul>
+                            <li><a class="proyectos_nav-uno" href="url-del-repositorio-2" aria-label="Ver repositorio del sitio web">Repositorio</a></li>
+                            <li><a class="proyectos_nav-dos" href="url-del-demo-2" aria-label="Ver demo del sitio web">Ver el demo</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="proyectos__contenedor-elementos">
+                    <figure>
+                        <img class="proyectos_img" src="ruta/a/tu/imagen3.jpg" alt="Captura de pantalla de Lorens Play">
+                        <figcaption>Lorens Play</figcaption>
+                    </figure>
+                    <p class="proyectos__nombre">Práctica personal</p>
+                    <nav class="proyectos_nav">
+                        <ul>
+                            <li><a class="proyectos_nav-uno" href="url-del-repositorio-3" aria-label="Ver repositorio de Lorens Play">Repositorio</a></li>
+                            <li><a class="proyectos_nav-dos" href="url-del-demo-3" aria-label="Ver demo de Lorens Play">Ver el demo</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
         </section>
+        
 
         <!-- Sección de Contacto -->
         <section class="contacto" id="contacto">
-            <h2 class="contacto__titulo">Contacto</h2>
+            <h1 class="contacto__titulo">Contacto</h1>
             <form class="contacto__formulario">
-                <input class="contacto__campo" type="text" placeholder="Nombre">
+                <input class="contacto__campo" type="text" placeholder="Nombre"> 
                 <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
                 <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
                 <button class="contacto__boton" type="submit">Enviar</button>

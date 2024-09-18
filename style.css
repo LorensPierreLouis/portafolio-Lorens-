@@ -100,6 +100,16 @@ font-size: 1.05rem;
 .redes_texto:hover{
     color: var(--blanco);
 }
+/*Formación*/
+.formacion__icono{
+   width: 150px;
+   height: 150px;
+   background-color: #ffffff;
+   padding: 40px;
+   align-items: center;
+
+}
+
 /*Contacto*/
 .contacto{   
  background-color:var(--gris-claro);

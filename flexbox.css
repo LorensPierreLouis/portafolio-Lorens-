@@ -45,7 +45,7 @@ main{
     flex-direction: column;
     gap: 50px;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 65px;
     
 }
 
@@ -138,15 +138,7 @@ flex-flow: row wrap;
 .formacion__elemento{
     display: flex;
     flex-direction: column;
-    gap: 1px;
-}
 
-
-.formacion__icono{
-    background-color: #ffffff;
-    padding: 50px;
-    align-items: center;
-    
 }
 
 
@@ -155,8 +147,8 @@ flex-flow: row wrap;
     .contacto__titulo
     .contacto__formulario{
         display: flex;
-    flex-direction: column;
-    gap: 40px;
+        flex-direction: column;
+        gap: 40px;
     }
     .contacto__campo{
         width:100%;
@@ -225,10 +217,12 @@ flex-flow: row wrap;
     .habilidades__elemento-iconoParrafo{
         background-color: #ffffff;
         text-align: center;
-        padding: 90px;
+        padding: 70px;
        
 
     }
+
+  
 
    /*redes*/
     .redes{
@@ -243,16 +237,12 @@ flex-flow: row wrap;
     .formacion__lista{
         display: flex;
         flex-direction: row;
+        justify-content: center;
        
     }
-    
-.formacion__icono{
-   
-    padding: 20px;
-   
-    
-}
 
+    
+        
     
 }
 
