@@ -1,7 +1,6 @@
-/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
-*/
+
 :root {
-    --color-de-fondo:#fbf2ed;
+    --color-de-fondo:#ffff;
     --color-de-fondo-menu: #9a1a1a ;
     --color-de-link: #000000;
     --azul-oscuro: #154580;
@@ -12,6 +11,8 @@
     --lavanda:#E6E6FA;
     --blanco:#ffffff;
     --azul-cielo-claro:#87CEFA;
+    --color-elementos:#ccdbdb;
+    --color-contenedor-segundario: #9bbcb2;
     box-sizing: border-box;
 }
 
@@ -24,10 +25,21 @@ body {
     line-height: 1.6;
 }
 
+.negrita{
+    font-weight: 700;
+}
+
+/*Menu*/
 header{
     width: 100%;
     
 }
+
+.cabecera__logo {
+    width: 50px;
+    height: 60px;
+   
+}  
 .cabecera{
    
     padding-left: 20px;
@@ -68,7 +80,7 @@ section{
 }
 .sobre-mi,
 .formacion{
-    background-color:var(--gris-claro);
+    background-color:var(--color-contenedor-segundario);
 }
 .sobre-mi__titulo,
 .habilidades__titulo,
@@ -76,8 +88,18 @@ section{
 .formacion__titulo,
 .proyectos__titulo,
 .contacto__titulo{
-font-weight:600 ;
-font-size: 1.05rem;
+font-weight:700 ;
+font-size: 1.15rem;
+color: #031b1bfb;
+}
+
+hr{
+    width: 60px;
+    height: 5px;
+    background-color: #481111;
+    border: none;
+    border-radius: 10px;
+    margin-top: -20px;
 
 }
 
@@ -100,44 +122,214 @@ font-size: 1.05rem;
 .redes_texto:hover{
     color: var(--blanco);
 }
+
+/*habilidades*/
+
+.habilidades__elemento-iconoParrafo{
+    background-color:var(--color-elementos);
+    box-shadow:  5px 5px 5px 2px rgba(78, 76, 76, 0.3);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.habilidades__icono{
+    width: 50px;
+}
+
+
+/*Aficciones*/
+
+.aficiones__elemento{
+    background-color:var(--color-elementos);
+    box-shadow:  5px 5px 5px 2px rgba(78, 76, 76, 0.3);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 40px;
+    text-align: start;
+    width: 90px;
+    height: 100px;
+    
+}
+
+.aficiones__icono{
+    width: 50px;
+}
+
+
+
 /*Formación*/
 .formacion__icono{
    width: 150px;
    height: 150px;
-   background-color: #ffffff;
+   background-color:var(--color-elementos);
+   box-shadow:  5px 5px 5px 2px rgba(78, 76, 76, 0.3);
    padding: 40px;
    align-items: center;
 
 }
 
+/*Sesión proyecto*/
+.proyectos{
+    background-color: #9bbcb2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.proyectos__titulo{
+    text-align: center;
+}
+.proyectos__contenedor{
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+
+
+.proyectos__contenedor-elementos{
+background-color: #ccdbdb;
+box-shadow:  5px 5px 5px 2px rgba(78, 76, 76, 0.3);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+.proyectos_img{
+width: 90%;
+}
+
+figcaption{
+    font-size: 0.80rem;
+    padding-bottom: 20px;
+}
+.proyectos__nombre{
+font-weight: 600;
+padding-bottom: 20px;
+}
+
+.proyectos_nav-li-rep,
+.proyectos_nav-li-demo{
+background-color: #3c9ecf;
+width: 100px;
+padding: 5px ;
+border-radius: 10px;
+font-size: 0.75rem;
+color: #000;
+font-weight: 600;
+}
+
+.proyectos_nav-li-rep:hover,
+.proyectos_nav-li-demo:hover{
+background-color: #E6E6FA;
+}
+
 /*Contacto*/
 .contacto{   
- background-color:var(--gris-claro);
- height: auto;
-}
-.contacto__boton{
-    background-color:var(--blanco);
-    width: 20%;
-    border-radius: 10px;
-    font-size: 1rem;
-}
-.contacto__boton:hover{
-    background-color:var(--azul-cielo-claro);
-}
-      
+    background-color:var(--gris-claro);
+    height: auto;
+   }
+   .contacto__boton{
+       background-color:var(--blanco);
+       width: 20%;
+       border-radius: 10px;
+       font-size: 1rem;
+   }
+   .contacto__boton:hover{
+       background-color:var(--azul-cielo-claro);
+   }
+         
+   
+   .presentacion__foto{
+       height: 150px;
+       width: 180px;
+       border-radius: 50px;
+   }
 
-.presentacion__foto{
-    height: 150px;
-    width: 180px;
-    border-radius: 50px;
+.contacto__campo{
+    width:100%;
+
+}  
+
+.contacto__campo--textarea{
+    height: 70px;
 }
+
+
+/*Footer*/
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    height: 150px;
+    color: #000;
+    line-height: 1.5;
+    font-size: 16px;
+ 
+    padding-top: 20px;
+}
+
+.footer-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.footer-aside-logo{
+    padding-top: 35px;
+}
+
+
+
+.footer-navigation-icon:hover{
+    background-color: #dc7b65;
+}
+ 
+
+.footer-navigation-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-navigation-text{
+    padding-bottom: 50px;
+   
+}
+
+/*Contacto*/
+    
+
+    .contacto__campo{
+        width:100%;
+
+    }  
+.contacto{
+    background-color: var(--color-contenedor-segundario);
+}
+
+
+    .contacto__campo--textarea{
+        height: 70px;
+    }
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
     .presentacion__foto{
-        height: 180px;
-        width: 180px;
+        height: 200px;
+        width: 200px;
         border-radius: 50px;
+    }
+    .presentacion__contenedor{
+        padding-top: 40px;
+    }
+
+
+    /*FOOTER*/
+
+    .footer {
+        height: 50px;
+    }
+    .footer-aside-logo{
+        padding-top: 5px;
     }
 }
 
@@ -147,13 +339,19 @@ font-size: 1.05rem;
         font-size: 1.8rem;
     }
 
+    .presentacion__contenedor{
+        padding-top: 100px;
+        padding-right: 100px;
+       }
+   
+
     .navegacion__elemento a {
         font-size: 1.1rem;
     }
 
     .presentacion__foto{
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
         border-radius: 50px;
     }
    

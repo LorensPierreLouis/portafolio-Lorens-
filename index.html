@@ -13,16 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Mi Portafolio</title>
+    <title>Portafolio de Lorens</title>
 </head>
 
 <body>
     <!-- Menú -->
     <header>
+
         <div class="cabecera">
             <div class="cabecera_logo_titulo">
-                <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
-                <h1 class="cabecera__titulo">Lorens</h1>
+                <img class="cabecera__logo" src="assets/logo de lorens.png" alt="Logo">
             </div>
             <nav class="navegacion">
                 <ul class="navegacion__lista">
@@ -43,8 +43,8 @@
         <section class="presentacion">
             <img class="presentacion__foto" src="assets/WhatsApp Image 2024-08-30 at 19.12.21.jpeg" alt="Foto de perfil">
             <div class="presentacion__contenedor">
-                <h1 class="presentacion__titulo">Hola, mi nombre es Lorens Pierre-Louis, hago páginas web.</h1> <br>
-                <p class="presentacion__subtitulo">Actualmente estoy estudiando en Oracle ONE de Alura Latam para perfeccionándome.</p> <br>
+                <h1 class="presentacion__titulo">Hola, mi nombre es <strong class="negrita"> Pierre-Louis </strong>, desarrollador junior de páginas web.</h1> <br>
+                <p class="presentacion__subtitulo">Actualmente estoy estudiando en <strong  class="negrita"> ONE de Alura Latam </strong> para perfeccionándome.</p> <br>
                 <ul class="redes">
                     <li class="redes__img"><a href="" class="redes_texto">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
                     <li class="redes__img"><a href="" class="redes_texto">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
@@ -57,7 +57,7 @@
         <!-- Sección sobre mí -->
         <section class="sobre-mi" id="sobre-mi">
             <h1 class="sobre-mi__titulo">Sobre mí</h1>
-            <p class="sobre-mi__texto">Soy de nacionalidad haitiana, vivo en chile hace ocho años. Soy un egresado de licenciatura de nutrición y dietética de la universidad tecnológica (INACAP)hace tres años. Hoy estoy aprendiendo programación web (FRONT-END). Soy un apacionado de la tecnología, y quiero contribuir resolviendo problemas a través de ésta.</p>
+            <p class="sobre-mi__texto">Soy de nacionalidad haitiana, vivo en chile hace ocho años. Soy un egresado de licenciatura de nutrición y dietética de la universidad tecnológica (INACAP)hace tres años. Hoy estoy aprendiendo programación web (FRONT-END), haciendo página web con responsividad y de caracteristicas semanticas y de accesibilidad. Soy un apacionado de la tecnología, y quiero contribuir resolviendo problemas a través de ésta.</p>
         
         
         </section>
@@ -65,6 +65,7 @@
         <!-- Sección de Habilidades -->
         <section class="habilidades" id="habilidades"></section>
             <h1 class="habilidades__titulo">Habilidades</h1>
+            <hr>
             <ul class="habilidades__elemento">
                 <li class="habilidades__elemento-iconoParrafo">
                     <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
@@ -85,6 +86,7 @@
         <!-- Sección de Aficiones -->
         <section class="aficiones" id="aficiones" aria-labelledby="aficiones-titulo">
             <h2 id="aficiones-titulo" class="aficiones__titulo">Aficiones</h2>
+            <hr>
             <ul class="aficiones__lista" role="list">
                 <li class="aficiones__elemento" role="listitem">
                     <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Icono de tocar guitarra" aria-hidden="true">
@@ -113,6 +115,7 @@
         <!-- Sección de Formación académica -->
         <section class="formacion" id="formacion" aria-labelledby="formacion-titulo">
             <h1 id="formacion-titulo" class="formacion__titulo">Formación académica</h1>
+            <hr>
             <ul class="formacion__lista">
                 <li class="formacion__elemento">
                     <img class="formacion__icono" src="assets/logo_inacap.png" alt="Logo de INACAP" role="img" />
@@ -144,43 +147,44 @@
         <!-- Sección de Proyectos -->
         <section class="proyectos" id="proyectos">
             <h1 class="proyectos__titulo">Experiencia Profesional</h1>
+            <hr>
             <ul class="proyectos__contenedor" role="list">
                 <li class="proyectos__contenedor-elementos">
                     <figure>
-                        <img class="proyectos_img" src="ruta/a/tu/imagen1.jpg" alt="Captura de pantalla del encriptador de texto">
+                        <img class="proyectos_img" src="assets/encriptador_foto (1).png" alt="Captura de pantalla del encriptador de texto">
                         <figcaption>Encriptador de texto</figcaption>
                     </figure>
                     <p class="proyectos__nombre">Challenge Oracle</p>
                     <nav class="proyectos_nav">
-                        <ul>
-                            <li><a class="proyectos_nav-uno" href="url-del-repositorio-1" aria-label="Ver repositorio del encriptador de texto">Repositorio</a></li>
-                            <li><a class="proyectos_nav-dos" href="url-del-demo-1" aria-label="Ver demo del encriptador de texto">Ver el demo</a></li>
+                        <ul class="proyectos_nav-ul">
+                            <li class="proyectos_nav-li-rep"><a class="proyectos_nav-rep" href="https://github.com/LorensPierreLouis/Lorens-Challenge-encriptador.git" aria-label="Ver repositorio del encriptador de texto">Repositorio</a></li>
+                            <li  class="proyectos_nav-li-demo"><a class="proyectos_nav-demo" href="https://lorens-challenge-encriptador.vercel.app/" aria-label="Ver demo del encriptador de texto">Ver el demo</a></li>
                         </ul>
                     </nav>
                 </li>
                 <li class="proyectos__contenedor-elementos">
                     <figure>
-                        <img class="proyectos_img" src="ruta/a/tu/imagen2.jpg" alt="Captura de pantalla del sitio web">
-                        <figcaption>Sitio web</figcaption>
+                        <img class="proyectos_img" src="assets/sitio_web_ficticio (1).png" alt="Captura de pantalla del sitio web">
+                        <figcaption>Sitio web ficticio de Tabernacle De Gloire</figcaption>
                     </figure>
                     <p class="proyectos__nombre">Práctica personal</p>
                     <nav class="proyectos_nav">
-                        <ul>
-                            <li><a class="proyectos_nav-uno" href="url-del-repositorio-2" aria-label="Ver repositorio del sitio web">Repositorio</a></li>
-                            <li><a class="proyectos_nav-dos" href="url-del-demo-2" aria-label="Ver demo del sitio web">Ver el demo</a></li>
+                        <ul class="proyectos_nav-ul">
+                            <li class="proyectos_nav-li-rep"><a class="proyectos_nav-rep" href="https://github.com/LorensPierreLouis/Sitio-web-ficticio.git" aria-label="Ver repositorio del sitio web">Repositorio</a></li>
+                            <li class="proyectos_nav-li-demo"><a class="proyectos_nav-demo" href="" aria-label="https://sitio-web-ficticio-g8dl.vercel.app/index.html">Ver el demo</a></li>
                         </ul>
                     </nav>
                 </li>
                 <li class="proyectos__contenedor-elementos">
                     <figure>
-                        <img class="proyectos_img" src="ruta/a/tu/imagen3.jpg" alt="Captura de pantalla de Lorens Play">
-                        <figcaption>Lorens Play</figcaption>
+                        <img class="proyectos_img" src="assets/watch_foto.png" alt="Captura de pantalla de Lorens Play">
+                        <figcaption>Evangelio - Watch</figcaption>
                     </figure>
                     <p class="proyectos__nombre">Práctica personal</p>
                     <nav class="proyectos_nav">
-                        <ul>
-                            <li><a class="proyectos_nav-uno" href="url-del-repositorio-3" aria-label="Ver repositorio de Lorens Play">Repositorio</a></li>
-                            <li><a class="proyectos_nav-dos" href="url-del-demo-3" aria-label="Ver demo de Lorens Play">Ver el demo</a></li>
+                        <ul class="proyectos_nav-ul">
+                            <li class="proyectos_nav-li-rep"><a class="proyectos_nav-rep" href="https://github.com/LorensPierreLouis/E-Watch.git" aria-label="Ver repositorio de Lorens Play">Repositorio</a></li>
+                            <li class="proyectos_nav-li-demo"><a class="proyectos_nav-demo" href="https://e-watch-eight.vercel.app/" aria-label="Ver demo de Lorens Play">Ver el demo</a></li>
                         </ul>
                     </nav>
                 </li>
@@ -191,18 +195,45 @@
         <!-- Sección de Contacto -->
         <section class="contacto" id="contacto">
             <h1 class="contacto__titulo">Contacto</h1>
+             <br>
             <form class="contacto__formulario">
-                <input class="contacto__campo" type="text" placeholder="Nombre"> 
-                <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+                <div class="contacto__campo-input">
+                    <input class="contacto__campo contacto__campo--input" type="text" placeholder="Nombre"> 
+                    <input class="contacto__campo contacto__campo--input" type="email" placeholder="Correo Electrónico">
+                </div>
                 <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
                 <button class="contacto__boton" type="submit">Enviar</button>
             </form>
         </section>
     </main>
+    <!--Footer-->
+    <footer class="footer">
+        <aside class="footer-aside-logo"> <img src="assets/logo de lorens.png" class="footer-logo" alt="Logo del pie de página"></aside>
+        <nav class="footer-navigation" aria-label="Redes sociales">
+            <ul class="footer-navigation-list">
+                <li >
+                    <a href="https://www.facebook.com/lorens.pierrelouis/" aria-label="Ir a Facebook" class="footer-navigation-list-li" >
+                        <img src="assets/icons8-facebook-nuevo-48.png" alt="imagen de Facebook" class="footer-navigation-icon">
+                    
+                    </a>
+                </li>
+                <li class="footer-navigation-list-li">
+                    <a href="https://github.com/LorensPierreLouis" aria-label="Ir a GitHub">
+                        <img src="assets/github.png" alt="imagen de GitHub" class="footer-navigation-icon">
+                    
+                    </a>
+                </li>
+                <li class="footer-navigation-list-li">
+                    <a href="https://www.linkedin.com/in/lorens-pierre-louis-86b482197/" aria-label="Ir a LinkedIn">
+                        <img src="assets/linkedin.png" alt="imagen de LinkedIn" class="footer-navigation-icon">
+                    
+                    </a>
+                </li>
+            </ul>
+        </nav>
+     </footer>
+     
 
-    <footer>
-        
-    </footer>
 </body>
     <script src="script.js"></script>
 </html>

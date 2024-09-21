@@ -7,11 +7,10 @@
     position: fixed;
     padding: 1rem;
     padding-left: 20px;
-    padding-right: 20px;
+   width: 100%;
     gap: 50px;
-    width: 100%;
     height: 30px;
-    background-color: var(--color-de-fondo-menu);
+    background-color: #025c5cfb;
 }
 .cabecera_logo_titulo{
     display: flex;
@@ -22,7 +21,6 @@
     max-width: 30px;
     height: 30px;
 }   
-/* Ajuste para pantallas pequeñas */
 
 
 .navegacion__lista{
@@ -30,7 +28,7 @@
     white-space: nowrap;
     overflow: scroll;
     gap: 15px;
-    width: 200px;
+    width: 330px;
 
 }
 
@@ -43,8 +41,7 @@ main{
 
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 100%;
+    gap: 20px;
     padding-top: 65px;
     
 }
@@ -81,21 +78,12 @@ flex-flow: row wrap;
 }
 
 
-.habilidades__elemento-iconoParrafo{
-    background-color: #ffffff;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+
 
 .habilidades__titulo{
     text-align: center;
 }
 
-.habilidades__icono{
-    width: 30px;
-    height: 30px;
-}
 
 /*aficiones*/
 
@@ -110,23 +98,12 @@ flex-flow: row wrap;
 }
 
 
-.aficiones__elemento{
-    background-color: #ffffff;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 40px;
-    text-align: start;
-    
-    max-width: 90px;
-   
-}
+
 
 /*formacion*/
 .formacion{
     align-items: center;
-    width: 100%;
+   
     padding: 20px;
 
 }
@@ -142,6 +119,42 @@ flex-flow: row wrap;
 }
 
 
+/*Sesión proyecto*/
+
+.proyectos__titulo,
+.proyectos__contenedor{
+display: flex;
+flex-direction: column;
+
+}
+
+
+.proyectos__contenedor{
+display: flex;
+text-align: center;
+gap: 30px;
+}
+
+
+
+.proyectos_img{
+width: 90%;
+}
+
+
+
+.proyectos_nav-ul{
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 40px;
+}
+
+
+
+
+
+
 /*Contacto*/
    
     .contacto__titulo
@@ -155,11 +168,28 @@ flex-flow: row wrap;
     
     }  
 
+    
+
     .contacto__campo--textarea{
         height: 70px;
     }
-   
-     
+
+    
+/*Footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-navigation-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
@@ -215,7 +245,7 @@ flex-flow: row wrap;
     }
 
     .habilidades__elemento-iconoParrafo{
-        background-color: #ffffff;
+        background-color:var(--color-elementos);
         text-align: center;
         padding: 70px;
        
@@ -241,6 +271,29 @@ flex-flow: row wrap;
        
     }
 
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+        box-shadow: 10px 10px 10px 10px;
+        
+    }
+
+    
+    .footer-navigation-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 25px;
+    }
+
+
     
         
     
@@ -249,10 +302,6 @@ flex-flow: row wrap;
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
-    .presentacion__contenedor{
-     padding-top: 100px;
-        
-        background-color: aqua;
-    }
-   
+  
+  
 }
