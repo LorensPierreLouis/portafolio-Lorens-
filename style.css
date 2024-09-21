@@ -78,19 +78,22 @@ section{
 .sobre-mi__texto{
     text-align: justify;
 }
+
 .sobre-mi,
 .formacion{
     background-color:var(--color-contenedor-segundario);
 }
+
+
 .sobre-mi__titulo,
 .habilidades__titulo,
 .aficiones__titulo,
 .formacion__titulo,
 .proyectos__titulo,
 .contacto__titulo{
-font-weight:700 ;
-font-size: 1.15rem;
-color: #031b1bfb;
+    font-weight:700 ;
+    font-size: 1.15rem;
+    color: #031b1bfb;
 }
 
 hr{
@@ -257,6 +260,11 @@ background-color: #E6E6FA;
 }
 
 
+.contacto{
+background-color: var(--color-contenedor-segundario);
+}
+
+
 /*Footer*/
 .footer {
     width: 100%;
@@ -295,21 +303,6 @@ background-color: #E6E6FA;
    
 }
 
-/*Contacto*/
-    
-
-    .contacto__campo{
-        width:100%;
-
-    }  
-.contacto{
-    background-color: var(--color-contenedor-segundario);
-}
-
-
-    .contacto__campo--textarea{
-        height: 70px;
-    }
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
