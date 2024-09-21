@@ -36,13 +36,13 @@ header{
 }
 
 .cabecera__logo {
-    width: 50px;
-    height: 60px;
+    width: 30px;
+    height: 40px;
    
 }  
 .cabecera{
    
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 0;
     color:#edeae7;
 
@@ -56,7 +56,7 @@ header{
 background-color:var( --azul-medio) ;
 width: 100%;
 padding-right: 10px;
-padding-left: 10px;
+padding-left: 0px;
 border-radius: 15px;
 }
 
@@ -66,13 +66,15 @@ a {
 }
 
 
+
+
+/*Sección de Presentación*/
+
 section{
    
     padding-left: 20px;
     padding-right: 20px;
 }
-
-/*Sección de Presentación*/
 .presentacion__titulo,
 .presentacion__subtitulo,
 .sobre-mi__texto{
@@ -166,7 +168,7 @@ hr{
 .formacion__icono{
    width: 150px;
    height: 150px;
-   background-color:var(--color-elementos);
+   background-color:#ffff;
    box-shadow:  5px 5px 5px 2px rgba(78, 76, 76, 0.3);
    padding: 40px;
    align-items: center;
