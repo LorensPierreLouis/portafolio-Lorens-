@@ -11,10 +11,10 @@ document.getElementById('contacto').addEventListener('submit', function(event) {
     // Validación simple
     if (nombre === '' || email === '') {
       alert("Por favor, completa todos los campos");
-      alert.style.color = 'red';
+      
     } else {
       alert("Formulario enviado con éxito");
-      alert.style.color = 'green';
+      
     }
   });
   
